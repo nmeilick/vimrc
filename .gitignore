@@ -1,0 +1,6 @@
+tmp
+local
+plugged/*
+.viminfo*
+.netrwhist*
+*.bak

@@ -1,0 +1,364 @@
+aleph=224                           " sets the value of aleph to 224
+noarabic                            " disables the use of Arabic characters
+arabicshape                         " enables shaping of Arabic characters
+noallowrevins                       " disables reverse insertion
+ambiwidth=single                    " sets the width of ambiguous characters to single
+noautochdir                         " disables automatic directory changing
+noautoshelldir                      " disables automatic shell directory switching
+autoindent                          " enables automatic indentation
+autoread                            " enables automatic reading of files when changed outside of Vim
+noautowrite                         " disables automatic writing of files on certain events
+noautowriteall                      " disables automatic writing of all files on certain events
+background=dark                     " sets the background color to dark
+backspace=indent,eol,start          " sets the behavior of the backspace key
+backup                              " enables backup of files
+backupcopy=yes                      " sets the backup copy method to yes
+backupdir=~/.vim/tmp/backup//       " sets the directory for backup files
+backupext=~                         " sets the extension for backup files
+backupskip=/tmp/*,/dev/shm/*,*/.cfs*/* " sets the files to skip when creating backups
+balloondelay=600                    " sets the delay time for balloon messages
+noballoonevalterm                   " disables evaluation of balloon messages as Vim commands
+balloonexpr=                        " sets the expression for balloon messages
+belloff=                            " turns off the bell
+nobinary                            " disables binary mode
+nobomb                              " disables the use of a byte order mark
+breakat=                            " <09>!@*-+;:,./?	sets the characters at which to break lines
+nobreakindent                       " disables automatic indentation after line breaks
+breakindentopt=                     " sets the options for indentation after line breaks
+bufhidden=                          " sets the behavior of hidden buffers
+buflisted                           " enables listing of buffers
+buftype=                            " sets the type of buffer
+casemap=internal,keepascii          " sets the case mapping method
+nocdhome                            " disables changing to the home directory when changing directories
+cdpath=,,                           " sets the search path for changing directories
+cedit=<06>                          " sets the character used for command-line editing
+charconvert=                        " sets the character conversion method
+nocindent                           " disables automatic indentation in C code
+cinkeys=0{,0},0),0],:,0#,!^F,o,O,e  " sets the keys used for C indentation
+cinoptions=                         " sets the options for C indentation
+cinscopedecls=public,protected,private " sets the scope declarations for C indentation
+cinwords=if,else,while,do,for,switch " sets the keywords used for C indentation
+cmdheight=1                         " sets the height of the command-line window
+cmdwinheight=7                      " sets the height of the command-line window in the command-line window
+colorcolumn=                        " sets the column for highlighting
+columns=158                         " sets the number of columns
+comments=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:- " sets the comment characters for different file types
+commentstring=/*%s*/                " sets the comment string for the current file type
+nocompatible                        " disables compatibility with vi
+complete=.,w,b,u,t,i                " sets the completion method
+concealcursor=                      " sets the cursor behavior when using concealment
+conceallevel=0                      " sets the level of concealment
+completefunc=                       " sets the function for completion
+completeopt=menu,preview            " sets the options for completion
+completepopup=                      " sets the behavior of the completion popup
+noconfirm                           " disables confirmation prompts
+nocopyindent                        " disables copying of indentation
+cpoptions=aABceFs                   " sets the behavior of various options
+cryptmethod=blowfish2               " sets the encryption method
+cscopepathcomp=0                    " sets the behavior of path components in cscope
+cscopeprg=cscope                    " sets the cscope program
+cscopequickfix=                     " sets the behavior of the quickfix window when using cscope
+nocscoperelative                    " disables relative path searching in cscope
+nocscopetag                         " disables tag searching in cscope
+cscopetagorder=0                    " sets the order of tag searching in cscope
+nocscopeverbose                     " disables verbose output in cscope
+nocursorbind                        " disables cursor binding
+nocursorcolumn                      " disables highlighting of the current column
+nocursorline                        " disables highlighting of the current line
+cursorlineopt=both                  " sets the behavior of the current line highlighting
+debug=                              " sets the debug mode
+define=^s*#s*define                 " sets the string for defining macros
+nodelcombine                        " disables combining of lines
+dictionary=~/.vim/dictionaries/english,~/.vim/dictionaries/german " sets the location of the spell-checking dictionaries
+nodiff                              " disables diff mode
+diffexpr=                           " sets the expression for diff mode
+diffopt=internal,filler,closeoff    " sets the options for diff mode
+nodigraph                           " disables digraph mode
+directory=.,/tmp,/var/tmp           " sets the directory for temporary files
+display=uhex,lastline               " sets the display mode
+eadirection=both                    " sets the direction of editing
+noedcompatible                      " disables compatibility with ed
+emoji                               " enables the use of emoji
+encoding=utf-8                      " sets the encoding method
+endofline                           " enables end-of-line conversion
+equalalways                         " enables resizing of windows
+equalprg=                           " sets the program used for = formatting
+noerrorbells                        " disables error bells
+errorfile=errors.err                " sets the file for error messages
+errorformat=%*[^"]"%f"%*D%l:        " %m,"%f"%*D%l: %m,%-G%f:%l: (Each undeclared identifier is reported only once,%-G%f:%l: for each function it appears in.),%-GIn file included from %f:%l:%c:,%-GIn file included from %f:%l:%c,,%-GIn file included from %f:%l:%c,%-GIn file included from %f:%l,%-G%*[ ]from %f:%l:%c,%-G%*[ ]from %f:%l:,%-G%*[ ]from %f:%l,,%-G%*[ ]from %f:%l,%f:%l:%c:%m,%f(%l):%m,%f:%l:%m,"%f", line %l%*D%c%*[^ ] %m,%D%*a[%*d]: Entering directory %*[`']%f',%X%*a[%*d]: Leaving directory %*[`']%f',%D%*a: Entering directory %*[`']%f',%X%*a: Leaving directory %*[`']%f',%DMaking %*a in %f,%f|%l| %m	sets the format for error messages
+esckeys                             " enables the use of escape sequences
+eventignore=                        " sets the events to ignore
+expandtab                           " enables expansion of tabs
+noexrc                              " disables reading of .exrc files
+fileencoding=utf-8                  " sets the encoding method for files
+fileencodings=ucs-bom,utf-8,default,latin1 " sets the encoding methods to try when reading files
+fileformat=unix                     " sets the file format
+fileformats=unix,dos                " sets the file formats to try when reading files
+nofileignorecase                    " disables ignoring of case when searching for files
+filetype=                           " sets the file type
+fillchars=vert:|,fold:-,eob:~       " sets the characters used for filling
+fixendofline                        " enables fixing of end-of-line characters
+foldclose=                          " Determines which types of folds should be closed when a fold is closed
+foldcolumn=0                        " Width of the fold column, set to 0 to disable
+foldenable                          " Enables folding
+foldexpr=0                          " Expression used to determine fold level
+foldignore=#                        " Lines starting with this character are ignored when folding
+foldlevel=0                         " Initial fold level
+foldlevelstart=-1                   " Determines the minimum fold level when opening a file
+foldmarker={{{,}}}                  " Custom fold markers
+foldmethod=manual                   " Method used for folding
+foldminlines=1                      " Minimum number of lines for a fold
+foldnestmax=20                      " Maximum nested fold levels
+foldopen=block,hor,mark,percent,quickfix,search,tag,undo " Determines which types of folds should be open when a fold is opened
+foldtext=foldtext()                 " Expression used to generate the text displayed for a fold
+formatexpr=                         " Expression used to format text
+formatoptions=tcrqnj                " Determines how text is formatted
+formatlistpat=^s*d+[]:.)}t          " ]s*	Pattern used to recognize list items
+formatprg=                          " External program used to format text
+fsync                               " Enables file synchronization
+nogdefault                          " Disables default mappings
+grepformat=%f:%l:%m,%f:%l%m,%f      " %l%m	Format of grep results
+grepprg=grep                        " -n $* /dev/null	External program used for grep
+guicursor=n:blinkon0                " Determines the cursor style in GUI mode
+helpfile=/usr/share/vim/vim90/doc/help.txt " Location of the help file
+helpheight=20                       " Height of the help window
+helplang=en                         " Language used for help files
+nohidden                            " Disables hiding of buffers
+highlight=8:SpecialKey,~:EndOfBuffer,@:NonText,d:Directory,e:ErrorMsg,i:IncSearch,l:Search,y:CurSearch,m:MoreMsg,M:ModeMsg,n:LineNr,a:LineNrAbove,b:LineNrBelow,N:CursorLineNr,G:CursorLineSign,O:CursorLineFold,r:Question,s:StatusLine,S:StatusLineNC,c:VertSplit,t:Title,v:Visual,V:VisualNOS,w:WarningMsg,W:WildMenu,f:Folded,F:FoldColumn,A:DiffAdd,C:DiffChange,D:DiffDelete,T:DiffText,>:SignColumn,-:Conceal,B:SpellBad,P:SpellCap,R:SpellRare,L:SpellLocal,+:Pmenu,=:PmenuSel,x:PmenuSbar,X:PmenuThumb,*:TabLine,#:TabLineSel,_:TabLineFill,!:CursorColumn,.:CursorLine,o:ColorColumn,q:QuickFixLine,z:StatusLineTerm,Z:StatusLineTermNC " Highlight groups and their attributes
+history=50                          " Maximum number of commands saved in the command-line history
+nohkmap                             " Disables mapping of the 'hk' command
+nohkmapp                            " Disables mapping of the 'hkm' command
+hlsearch                            " Highlights search results
+noicon                              " Disables icon display in the GUI
+iconstring=                         " Custom string used for the icon in the GUI
+noignorecase                        " Disables case-insensitive search
+imactivatefunc=                     " Function called when entering insert mode
+noimcmdline                         " Disables input method in the command-line
+noimdisable                         " Disables input method
+iminsert=0                          " Determines when input method is enabled in insert mode
+imsearch=-1                         " Determines when input method is enabled in search mode
+imstatusfunc=                       " Function called to update the input method status
+include=^s*#s*include               " Pattern used to recognize include statements
+includeexpr=                        " Expression used to resolve include statements
+incsearch                           " Enables incremental search
+indentexpr=                         " Expression used to determine indentation
+indentkeys=0{,0},0),0],:,0#,!^F,o,O,e " Keys used for auto-indentation
+noinfercase                         " Disables case inference
+noinsertmode                        " Disables insert mode
+isfname=@,48-57,/,.,-,_,+,,,#,$,%,~,= " Characters allowed in a file name
+isident=@,48-57,_,192-255           " Characters allowed in an identifier
+iskeyword=@,48-57,_,192-255         " Characters considered part of a keyword
+isprint=@,161-255                   " Characters considered printable
+nojoinspaces                        " Disables joining spaces with backspace
+key=                                " Defines a mapping for a key sequence
+keymap=                             " Defines a keymap
+keymodel=                           " Defines the key model
+keywordprg=man                      " External program used to display help for a keyword
+langmap=                            " Maps characters in one language to another
+langmenu=                           " Defines the language menu
+nolangnoremap                       " Disables mapping of language-specific keys
+langremap                           " Enables remapping of language-specific keys
+laststatus=2                        " Determines when the last line of the screen is displayed
+lazyredraw                          " Delays screen updates until necessary
+nolinebreak                         " Disables automatic line breaking
+lines=42                            " Number of lines in the window
+nolisp                              " Disables Lisp mode
+lispwords=defun,define,defmacro,set!,lambda,if,case,let,flet,let*,letrec,do,do*,define-syntax,let-syntax,letrec-syntax,destructuring-bind,defpackage,defparameter,defstruct,deftype,defvar,do-all-symbols,do-external-symbols,do-symbols,dolist,dotimes,ecase,etypecase,eval-when,labels,macrolet,multiple-value-bind,multiple-value-call,multiple-value-prog1,multiple-value-setq,prog1,progv,typecase,unless,unwind-protect,when,with-input-from-string,with-open-file,with-open-stream,with-output-to-string,with-package-iterator,define-condition,handler-bind,handler-case,restart-bind,restart-case,with-simple-restart,store-value,use-value,muffle-warning,abort,continue,with-slots,with-slots*,with-accessors,with-accessors*,defclass,defmethod,print-unreadable-object " Lisp keywords
+list                                " Enables list mode
+listchars=tab:>‸,trail:‸,extends:>,precedes:< " Characters used to display special characters
+loadplugins                         " Enables loading of plugins
+magic                               " Enables magic characters in search patterns
+makeef=                             " Expression used to determine error file for make
+makeencoding=                       " Encoding used for make
+makeprg=make                        " External program used for make
+matchpairs=(:),{:},[:],<:>          " Characters used for matching pairs
+matchtime=7                         " Time in tenths of a second to wait for matching pairs
+maxcombine=2                        " Maximum number of characters to combine for a match
+maxfuncdepth=100                    " Maximum depth of function calls
+maxmapdepth=1000                    " Maximum depth of mappings
+maxmem=8049152                      " Maximum memory used for a buffer
+maxmempattern=1000                  " Maximum memory used for a pattern
+maxmemtot=8049152                   " Maximum total memory used
+menuitems=25                        " Maximum number of items in a menu
+mkspellmem=460000,2000,500          " Memory used for spell checking
+modeline                            " Enables modeline
+nomodelineexpr                      " Disables expression evaluation in modeline
+modelines=5                         " Number of lines used for modeline
+modifiable                          " Enables modification of the buffer
+nomodified                          " Disables modified status
+more                                " Enables more prompt
+mouse=                              " Enables mouse support
+mousemodel=extend                   " Determines the mouse model
+mousetime=500                       " Time in milliseconds to wait for a mouse click
+nrformats=bin,octal,hex             " Number formats
+number                              " Enables line numbering
+numberwidth=4                       " Width of the line number column
+omnifunc=                           " Function used for omni-completion
+operatorfunc=                       " Function used for operator-pending mode
+packpath=~/.vim,/var/lib/vim/addons,/etc/vim,/usr/share/vim/vimfiles,/usr/share/vim/vim90,/usr/share/vim/vimfiles/after,/etc/vim/after,/var/lib/vim/addons/after,~/.vim/after " Path used for packages
+paragraphs=IPLPPPQPP                " TPHPLIPpLpItpplpipbp	Characters used to define paragraphs
+nopaste                             " Disables paste mode
+pastetoggle=<F5>                    " Sets the key to toggle paste mode on and off
+patchexpr=                          " Expression used to apply a patch
+patchmode=.bak                      " Backup file extension used when applying a patch
+path=.,/usr/include,,               " List of directories to search for files
+nopreserveindent                    " Disables preserving indentation when using << and >>
+previewheight=12                    " Height of the preview window
+previewpopup=                       " Type of popup used for the preview window
+nopreviewwindow                     " Disables preview window
+printdevice=                        " Name of the printer device
+printencoding=                      " Encoding used for printing
+printexpr=system('lpr'              " . (&printdevice == '' ? '' : ' -P' . &printdevice) . ' ' . v:fname_in) . delete(v:fname_in) + v:shell_error	Expression used to print a file
+printfont=courier                   " Font used for printing
+printheader=%<%f%h%m%=Page          " %N	Header used for printing
+printmbcharset=                     " Character set used for multi-byte characters when printing
+printmbfont=                        " Font used for multi-byte characters when printing
+printoptions=paper:a4               " Options used for printing
+prompt                              " Enables prompting for input
+pumheight=0                         " Height of the popup menu
+pumwidth=15                         " Width of the popup menu
+pythonthreehome=                    " Path to Python 3 installation
+pyxversion=3                        " Version of Pyrex used for compiling Python extensions
+quickfixtextfunc=                   " Function used for formatting text in the quickfix window
+quoteescape=noreadonly              " Enables quoting of special characters in file names
+redrawtime=2000                     " Time in milliseconds to wait before redrawing the screen
+regexpengine=0                      " Regular expression engine to use
+norelativenumber                    " Disables relative line numbers
+remap                               " Enables remapping of keys
+report=2                            " Number of lines to scroll with CTRL-U and CTRL-D
+norevins                            " Disables reverse insert mode
+norightleft                         " Disables right-to-left editing
+rightleftcmd=search                 " Command used for right-to-left searching
+ruler                               " Enables the ruler at the bottom of the screen
+rulerformat=                        " Format string used for the ruler
+runtimepath=~/.vim,~/.vim/plugged/vim,~/.vim/plugged/vim-devicons,~/.vim/plugged/vim-snippets,~/.vim/plugged/nerdtree,~/.vim/plugged/nerdcommenter,~/.vim/plugged/vim-go,~/.vim/plugged/tabular,~/.vim/plugged/vim-markdown,~/.vim/plugged/vim-airline,~/.vim/plugged/vim-airline-themes,~/.vim/plugged/neoformat,~/.vim/plugged/base16-vim,~/.vim/plugged/gundo.vim,~/.vim/plugged/promptline.vim,~/.vim/plugged/savevers.vim,~/.vim/plugged/splitjoin.vim,~/.vim/plugged/vim-fugitive,~/.vim/plugged/vim-multiple-cursors,~/.vim/plugged/vim-shfmt,/var/lib/vim/addons,/etc/vim,/usr/share/vim/vimfiles,/usr/share/vim/vim90,/usr/share/vim/vimfiles/after,/etc/vim/after,/var/lib/vim/addons/after,~/.vim/plugged/vim/after,~/.vim/plugged/tabular/after,~/.vim/plugged/vim-markdown/after,~/.vim/after " List of directories to search for runtime files
+scroll=19                           " Number of lines to scroll with CTRL-E and CTRL-Y
+noscrollbind                        " Disables scroll binding
+scrolljump=1                        " Number of lines to jump when scrolling
+scrolloff=3                         " Minimum number of lines to keep above and below the cursor
+scrollopt=ver,jump                  " Options used for scrolling
+sections=SHNHH                      " HUnhsh	List of sections used for folding
+nosecure                            " Disables secure mode
+selection=inclusive                 " Sets the selection mode to inclusive
+selectmode=                         " Sets the selection mode
+sessionoptions=blank,buffers,curdir,folds,help,options,tabpages,winsize,terminal " Options used for saving and restoring sessions
+shell=bash                          " Shell used for executing shell commands
+shellcmdflag=-c                     " Flag used for executing shell commands
+shellpipe=2>&1|                     " tee	Command used for piping shell output
+shellquote=                         " Quote character used for shell commands
+shellredir=>%s                      " 2>&1	Redirection used for shell commands
+shelltemp                           " Enables using a temporary file for shell commands
+shellxquote=                        " Quote character used for shell expressions
+shellxescape=                       " Escape character used for shell expressions
+shiftround                          " Enables rounding indentations to the nearest multiple of shiftwidth
+shiftwidth=2                        " Number of spaces to use for each indentation level
+shortmess=filnxtToOS                " Options used for shortening messages
+noshortname                         " Disables using short file names
+showbreak=|                         " Character used for showing wrapped lines
+showcmd                             " Enables showing the last command entered
+showfulltag                         " Enables showing the full tag when using CTRL-]
+showmatch                           " Enables highlighting matching brackets
+showmode                            " Enables showing the current mode
+showtabline=2                       " Sets the appearance of the tab line
+sidescroll=1                        " Number of columns to scroll horizontally
+sidescrolloff=3                     " Minimum number of columns to keep to the left and right of the cursor
+signcolumn=auto                     " Sets the width of the sign column
+nosmartcase                         " Disables smart case sensitivity
+nosmartindent                       " Disables smart indentation
+nosmarttab                          " Disables smart tabbing
+softtabstop=2                       " Number of spaces to use for each "virtual" tab
+nospell                             " Disables spell checking
+spellcapcheck=[.?!]_[])'"<09>       " ]+	Regular expression used for spell checking
+spellfile=                          " Name of the spell checking file
+spelllang=en                        " Language used for spell checking
+spelloptions=                       " Options used for spell checking
+spellsuggest=best                   " Type of suggestions used for spell checking
+nosplitbelow                        " Disables splitting below
+nosplitright                        " Disables splitting to the right
+nostartofline                       " Disables moving to the start of the line when moving up or down
+statusline=%!airline#statusline(1)  " Format string used for the status line
+suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc " List of file extensions used for suffixes
+suffixesadd=                        " Additional file extensions to use for suffixes
+swapfile                            " Enables using a swap file
+swapsync=                           " Synchronization method used for swap files
+switchbuf=                          " Method used for switching between buffers
+synmaxcol=3000                      " Maximum column used for syntax highlighting
+syntax=                             " Syntax highlighting method to use
+tabline=%!airline#extensions#tabline#get() " Format string used for the tab line
+tabpagemax=10                       " Maximum number of tabs to display
+tabstop=2                           " Number of spaces to use for each tab
+tagbsearch                          " Enables binary searching for tags
+tagcase=followic                    " Sets the case sensitivity for tags to follow the case of the search pattern
+tagfunc=                            " Function used for generating tags
+taglength=0                         " Minimum length of a tag
+tagrelative                         " Enables using relative paths for tags
+tags=./tags,./TAGS,tags,TAGS        " List of tag files to search
+tagstack                            " Enables using a tag stack
+term=rxvt                           " Terminal type
+notermbidi                          " Disables bidirectional text support
+termencoding=                       " Encoding used for the terminal
+notermguicolors                     " Disables the use of terminal GUI colors
+termwinkey=                         " Specifies the key used to switch between terminal and Vim windows
+termwinscroll=10000                 " Sets the maximum number of lines that can be scrolled in a terminal window
+termwinsize=                        " Specifies the size of the terminal window
+noterse                             " Disables the use of the terminal reset command
+textauto                            " Automatically detects the text file format
+notextmode                          " Disables the use of binary mode when editing files
+textwidth=120                       " Sets the maximum width of text in a file
+thesaurus=                          " Specifies the path to thesaurus file
+thesaurusfunc=                      " Specifies the function used to access thesaurus
+notildeop                           " Disables the use of tilde as an operator
+timeout                             " Enables timeout for mappings
+timeoutlen=1000                     " Sets the timeout length for mappings
+title                               " Enables setting the terminal window title
+titlelen=85                         " Sets the maximum length of the terminal window title
+titleold=                           " Specifies the previous terminal window title
+titlestring=%<%F                    " @ harras%=%l/%L-%P	Specifies the format of the terminal window title
+nottimeout                          " Disables timeout for mappings
+ttimeoutlen=-1                      " Sets the timeout length for key codes
+ttybuiltin                          " Enables the use of built-in terminal emulator
+ttyfast                             " Enables fast terminal output
+ttymouse=xterm2                     " Specifies the mouse mode for the terminal emulator
+ttyscroll=999                       " Sets the maximum number of lines that can be scrolled in the terminal emulator
+ttytype=rxvt                        " Specifies the type of terminal emulator
+undodir=.                           " Specifies the directory for undo files
+noundofile                          " Disables the use of persistent undo files
+undolevels=5000                     " Sets the maximum number of undo levels
+undoreload=1000000                  " Sets the maximum size of undo files
+updatecount=200                     " Sets the number of change updates before writing to disk
+updatetime=200                      " Sets the time interval for change updates
+varsofttabstop=                     " Specifies the variable number of spaces for soft tab stops
+vartabstop=                         " Specifies the variable number of spaces for tab stops
+verbose=0                           " Sets the verbosity level for messages
+verbosefile=                        " Specifies the file for verbose messages
+viewdir=~/.vim/tmp/view//           " Specifies the directory for view files
+viewoptions=folds,options,cursor,curdir " Specifies the options for view files
+viminfo='10,"100,:50,%,n~/.vim/.viminfo " Specifies the location and format of the viminfo file
+viminfofile=                        " Specifies the file for viminfo
+virtualedit=                        " Enables virtual editing mode
+visualbell                          " Enables the use of visual bell instead of audio bell
+nowarn                              " Disables warning messages
+noweirdinvert                       " Disables weird invert mode
+whichwrap=b,s,<>                    " Specifies the keys used for line wrapping
+wildchar=<Tab>                      " Specifies the character used for wildcards
+wildcharm=0                         " Specifies the key used for wildcards
+wildignore=                         " Specifies the patterns to ignore for wildcards
+nowildignorecase                    " Disables ignoring case for wildcards
+wildmenu                            " Enables the use of wildmenu
+wildmode=longest,list               " Specifies the mode for wildcards
+wildoptions=                        " Specifies the options for wildcards
+wincolor=                           " Specifies the color scheme for windows
+window=41                           " Sets the default window height
+nowinfixheight                      " Disables the use of fixed window height
+nowinfixwidth                       " Disables the use of fixed window width
+winminheight=1                      " Sets the minimum window height
+winminwidth=1                       " Sets the minimum window width
+winwidth=20                         " Sets the default window width
+nowrap                              " Disables line wrapping
+wrapmargin=0                        " Sets the margin for line wrapping
+nowrapscan                          " Disables scanning for line wrapping
+write                               " Enables writing to files
+nowriteany                          " Disables writing to read-only files
+writebackup                         " Enables writing backup files
+writedelay=0                        " Sets the delay before writing to disk
+xtermcodes                          " Enables the use of xterm codes

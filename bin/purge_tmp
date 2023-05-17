@@ -1,0 +1,6 @@
+#!/bin/sh
+
+tmpdir="$HOME/.vim/tmp/"
+if [ -d "$tmpdir" ]; then
+  find "$tmpdir" -type f -mtime +90 -delete
+fi
